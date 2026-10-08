@@ -9,6 +9,3 @@ node_modules/
 .DS_Store
 *.log
 
-.kilo/
-.github/workflows/
-

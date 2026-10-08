@@ -1,27 +1,33 @@
 # MP Job Saathi
 
-MP Job Saathi is a mobile-first job discovery and eligibility assistant for Madhya Pradesh government and private opportunities. The project is intentionally designed in phased delivery, with the first working slice focused on the government core: official-source-first listings, extraction, fee logic, eligibility checks, and alert-ready feed data.
+MP Job Saathi is a mobile-first job-discovery and eligibility assistant for Madhya Pradesh opportunities. This repo is intentionally being rebuilt and hardening from a verified baseline; the current state is not a full production system and these status labels reflect reality.
 
 ## Phase status
 
 | Phase | Status | Notes |
 | --- | --- | --- |
-| Phase 1: Government core | ✅ Working slice implemented | Source model, extraction, eligibility engine, feed, API, tests |
-| Phase 2: Government apply assist | ✅ Working assist slice implemented | Pre-fill map, document validation, pre-submit checklist |
-| Phase 3: Private jobs + job fairs | ✅ Working phase implemented | Company registry, private job matcher, scam-risk logic, job-fair fixtures |
-| Phase 4: Polish and growth | ✅ Working tracker and reminder layer | Application tracker, admit-card/result reminders, share card, admin snapshot |
+| Phase 1: Government core | Partial: models, early eligibility engine, fixtures | Real data model and tests exist, but this is still a fixture-driven implementation rather than a live official-source pipeline |
+| Phase 2: Government apply assist | Scaffold only | Browser assist, validation, and pre-submit logic are not yet real or fully integrated |
+| Phase 3: Private jobs + job fairs | Scaffold only | Company registry and job data exist as fixtures, not verified live sourcing |
+| Phase 4: Polish and growth | Scaffold only | Reminder and growth flows are placeholders and not production-ready |
 
-## What is real vs stubbed
+## Real vs stubbed
 
 | Area | Status |
 | --- | --- |
-| Official-source data model | Real |
-| Notification extraction logic | Real (fixture-driven parser) |
-| Eligibility engine | Real |
+| Government notification models | Real, but fixture-backed |
+| Eligibility engine | Real for the configured rules and tests |
+| Notification extraction parser | Real, but fixture-driven and not live fetched |
 | FastAPI API | Real |
-| Frontend PWA shell | Scaffolded |
-| Chrome extension | Scaffolded |
-| Live crawlers | Not yet enabled; fixtures only |
+| Frontend shell | Present, but not connected to a verified production API |
+| MV3 extension | Present as scaffold only |
+| Live crawlers / official verification | Not yet implemented |
+| Private-job ATS and job-fair data | Fixture-only |
+| Phase 3 and 4 features | Not production-ready; scaffold or fixture only |
+
+## Docker / local setup note
+
+The repository currently includes a `docker-compose.yml` that starts PostgreSQL while the backend is configured for SQLite. This mismatch is acknowledged and documented here for now. It is not yet fixed in this Work Package.
 
 ## Quick start
 
@@ -34,25 +40,26 @@ python -m pytest tests -q
 python -m uvicorn app.main:app --host 0.0.0.0 --port 8000
 ```
 
-Then open:
+### Frontend
 
-- Health: http://localhost:8000/health
-- Notifications: http://localhost:8000/notifications
-- Prefill assist: POST /assist/prefill
-- Document validation: POST /assist/validate-document
-- Pre-submit checklist: POST /assist/pre-submit-checklist
-- Private jobs ranking: POST /private-jobs/match
-- Applications tracker: POST /applications
-- Reminder feed: POST /applications/reminders
-- Share card: POST /share-card
-- Admin snapshot: POST /admin/snapshot
+```bash
+cd frontend
+npm ci
+npm run build
+```
 
 ## Verification
 
-The current proof command is:
+Current measured backend proof command:
 
 ```bash
 python -m pytest backend/tests -q
 ```
 
-This repository currently passes all implemented phases (1 through 4) with 18 passing tests.
+Current result from the repo at this revision:
+
+```text
+18 passed, 1 warning in 1.46s
+```
+
+This is a verified fixture-backed baseline, not a claim of full production deployment.

@@ -12,7 +12,8 @@ def get_company_registry() -> list[CompanySource]:
             careers_url="https://www.tcs.com/careers",
             ats_type="greenhouse",
             board_slug="tcs",
-            last_verified="2026-10-08",
+            last_verified=None,
+            is_fixture=True,
         ),
         CompanySource(
             name="Mahindra & Mahindra",
@@ -21,7 +22,8 @@ def get_company_registry() -> list[CompanySource]:
             careers_url="https://www.mahindra.com/careers",
             ats_type="lever",
             board_slug="mahindra",
-            last_verified="2026-10-08",
+            last_verified=None,
+            is_fixture=True,
         ),
         CompanySource(
             name="Apollo Hospitals",
@@ -30,7 +32,8 @@ def get_company_registry() -> list[CompanySource]:
             careers_url="https://careers.apollohospitals.com",
             ats_type="workable",
             board_slug="apollo",
-            last_verified="2026-10-08",
+            last_verified=None,
+            is_fixture=True,
         ),
     ]
 
@@ -46,6 +49,7 @@ def get_job_fair_calendar() -> list[JobFair]:
             eligibility="10th/12th/Graduate, age as per notification",
             documents_to_carry=["Resume", "ID proof", "Education documents"],
             source_url="https://mprojgar.gov.in/rozgar-mela/indore",
+            is_fixture=True,
         )
     ]
 
@@ -70,6 +74,7 @@ def get_private_job_fixtures() -> list[PrivateJob]:
             scam_score=16.0,
             required_skills=["civil", "site engineering", "autocad"],
             location_scope="MP",
+            is_fixture=True,
         ),
         PrivateJob(
             title="IT Support Executive",
@@ -89,6 +94,7 @@ def get_private_job_fixtures() -> list[PrivateJob]:
             scam_score=8.0,
             required_skills=["it support", "windows", "hardware"],
             location_scope="MP",
+            is_fixture=True,
         ),
         PrivateJob(
             title="Nursing Officer",
@@ -108,5 +114,6 @@ def get_private_job_fixtures() -> list[PrivateJob]:
             scam_score=88.0,
             required_skills=["nursing", "patient care"],
             location_scope="MP",
+            is_fixture=True,
         ),
     ]

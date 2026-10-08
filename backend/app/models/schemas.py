@@ -45,6 +45,7 @@ class GovtNotification(BaseModel):
     employment_exchange_registration_required: bool = False
     source_urls: list[str] = Field(default_factory=list)
     notification_pdf_url: Optional[str] = None
+    source_kind: Literal["official", "fixture", "lead"] = "fixture"
     verified_at: Optional[str] = None
     verified_by: Literal["auto", "curator"] = "auto"
     discrepancies: list[str] = Field(default_factory=list)
@@ -116,6 +117,7 @@ class CompanySource(BaseModel):
     ats_type: Optional[str] = None
     board_slug: Optional[str] = None
     last_verified: Optional[str] = None
+    is_fixture: bool = True
 
 
 class PrivateJob(BaseModel):
@@ -136,6 +138,7 @@ class PrivateJob(BaseModel):
     scam_score: float = 0.0
     required_skills: list[str] = Field(default_factory=list)
     location_scope: str = "MP"
+    is_fixture: bool = True
 
 
 class JobFair(BaseModel):
@@ -147,6 +150,7 @@ class JobFair(BaseModel):
     eligibility: str
     documents_to_carry: list[str] = Field(default_factory=list)
     source_url: str
+    is_fixture: bool = True
 
 
 class Application(BaseModel):

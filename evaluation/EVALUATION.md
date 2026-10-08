@@ -1,21 +1,31 @@
 # MP Job Saathi Evaluation
 
-## Phase 1 summary
+Generated on 2026-10-08 07:14:44 UTC by `python evaluation/run_all.py`.
 
-This repository includes the working phase-1 government slice and the measured proof command below.
+## Benchmarks run
 
-- Verified command: `python -m pytest backend/tests/test_phase1.py -q`
-- Result: 6 passed in 0.40s
-- Coverage: extraction, eligibility matching, fee logic, and feed ranking
+Backend test suite
+- Command: `C:\Users\Hp\AppData\Local\Programs\Python\Python312\python.exe -m pytest backend/tests -q`
+- Result:
 
-## Findings
+```text
+..................                                                       [100%]
+============================== warnings summary ===============================
+C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\formparsers.py:12
+  C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\formparsers.py:12: PendingDeprecationWarning: Please use `import python_multipart` instead.
+    import multipart
 
-- Official-source-first data model is in place and designed to store the official PDF/URL and verification timestamps.
-- Eligibility matches for age, qualification, and domicile requirements are tested on synthetic profiles.
-- Alert and feed ranking are ready to expand to Telegram and digest scheduling.
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+18 passed, 1 warning in 1.01s
+```
 
-## Planned follow-up
+## Notes
 
-- Add fixture-based PDF parsing with OCR fallback using Tesseract.
-- Add a real curator review console.
-- Expand the benchmark to 30+ labeled notifications and 100+ profile-post cases.
+- The repo currently contains a measured backend baseline, not a full live-data pipeline.
+- Warning output is recorded as-is and reported without hiding failures.
+- Fixture-backed data must be treated as such and not presented as curated live source data.
+
+## Current status
+
+- Phase 1: partial, fixture-backed, model + rules + engine verified by tests
+- Phases 2-4: scaffold-only and not yet production-grade
