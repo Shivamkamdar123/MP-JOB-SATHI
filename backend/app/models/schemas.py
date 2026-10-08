@@ -147,3 +147,33 @@ class JobFair(BaseModel):
     eligibility: str
     documents_to_carry: list[str] = Field(default_factory=list)
     source_url: str
+
+
+class Application(BaseModel):
+    job_title: str
+    organization: str
+    stage: Literal["saved", "preparing", "ready", "user_submitted", "exam_scheduled", "admit_card", "result", "closed"]
+    deadline: Optional[str] = None
+    exam_date: Optional[str] = None
+    result_date: Optional[str] = None
+    notes: list[str] = Field(default_factory=list)
+    status: Literal["active", "paused", "done"] = "active"
+
+
+class Reminder(BaseModel):
+    title: str
+    kind: str
+    date: str
+    message: str
+
+
+class ShareCard(BaseModel):
+    title: str
+    share_url: str
+    message: str
+
+
+class AdminSnapshot(BaseModel):
+    center_name: str
+    totals: dict[str, int] = Field(default_factory=dict)
+    applications: list[dict] = Field(default_factory=list)

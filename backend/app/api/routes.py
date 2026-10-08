@@ -6,6 +6,7 @@ from app.ingestion.mp_sources import get_sample_notifications
 from app.ingestion.private_jobs import get_company_registry, get_job_fair_calendar, get_private_job_fixtures
 from app.matching.matcher import match_private_jobs
 from app.models import GovtNotification, UserProfile
+from app.tracker.manager import build_admin_snapshot, build_reminders, build_share_card, create_application_tracking
 
 router = APIRouter()
 
@@ -89,3 +90,37 @@ def private_jobs_match(payload: dict) -> dict:
     jobs = [job for job in get_private_job_fixtures()]
     matches = match_private_jobs(profile, jobs)
     return {"items": [{"job": item["job"].model_dump(mode="json"), "score": item["score"], "reasons": item["reasons"], "status": item["status"]} for item in matches]}
+
+
+@router.post("/applications")
+def applications(payload: dict) -> dict:
+    tracker = create_application_tracking(
+        job_title=payload.get("job_title", "New Application"),
+        company=payload.get("company", "Unknown"),
+        stage=payload.get("stage", "saved"),
+        deadline=payload.get("deadline"),
+        exam_date=payload.get("exam_date"),
+    )
+    return tracker
+
+
+@router.post("/applications/reminders")
+def application_reminders(payload: dict) -> dict:
+    reminders = build_reminders(
+        deadline=payload.get("deadline"),
+        exam_date=payload.get("exam_date"),
+        result_date=payload.get("result_date"),
+    )
+    return {"items": reminders}
+
+
+@router.post("/share-card")
+def share_card(payload: dict) -> dict:
+    return build_share_card(payload.get("title", "Public job card"), payload.get("share_url", "https://mpjobs.example/job"))
+
+
+@router.post("/admin/snapshot")
+def admin_snapshot(payload: dict) -> dict:
+    center_name = payload.get("center_name", "MP Job Saathi center")
+    apps = payload.get("applications", [])
+    return build_admin_snapshot(center_name, apps)

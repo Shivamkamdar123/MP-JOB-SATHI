@@ -8,8 +8,8 @@ MP Job Saathi is a mobile-first job discovery and eligibility assistant for Madh
 | --- | --- | --- |
 | Phase 1: Government core | ✅ Working slice implemented | Source model, extraction, eligibility engine, feed, API, tests |
 | Phase 2: Government apply assist | ✅ Working assist slice implemented | Pre-fill map, document validation, pre-submit checklist |
-| Phase 3: Private jobs + job fairs | 🚧 Planned | ATS matching, scam scoring, job-fair registry |
-| Phase 4: Polish and growth | 🚧 Planned | Tracker, reminders, share cards, WhatsApp growth |
+| Phase 3: Private jobs + job fairs | ✅ Working phase implemented | Company registry, private job matcher, scam-risk logic, job-fair fixtures |
+| Phase 4: Polish and growth | ✅ Working tracker and reminder layer | Application tracker, admit-card/result reminders, share card, admin snapshot |
 
 ## What is real vs stubbed
 
@@ -41,14 +41,18 @@ Then open:
 - Prefill assist: POST /assist/prefill
 - Document validation: POST /assist/validate-document
 - Pre-submit checklist: POST /assist/pre-submit-checklist
+- Private jobs ranking: POST /private-jobs/match
+- Applications tracker: POST /applications
+- Reminder feed: POST /applications/reminders
+- Share card: POST /share-card
+- Admin snapshot: POST /admin/snapshot
 
 ## Verification
 
-The current proof commands are:
+The current proof command is:
 
 ```bash
-python -m pytest backend/tests/test_phase1.py -q
-python -m pytest backend/tests/test_phase2.py -q
+python -m pytest backend/tests -q
 ```
 
-The project currently passes the phase-1 and phase-2 checks in this repository.
+This repository currently passes all implemented phases (1 through 4) with 18 passing tests.
