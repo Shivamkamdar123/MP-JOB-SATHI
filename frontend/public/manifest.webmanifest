@@ -1,0 +1,10 @@
+{
+  "name": "MP Job Saathi",
+  "short_name": "MP Jobs",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0f766e",
+  "description": "Mobile-first job discovery for Madhya Pradesh.",
+  "icons": []
+}

@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "MP Job Saathi Assist",
+  "version": "0.1.0",
+  "description": "Pre-fill and validate government application forms for Madhya Pradesh jobs.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": [
+    "https://*.mponline.gov.in/*",
+    "https://*.esb.mp.gov.in/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*.mponline.gov.in/*", "https://*.esb.mp.gov.in/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
