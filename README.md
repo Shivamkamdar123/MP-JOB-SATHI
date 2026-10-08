@@ -7,7 +7,7 @@ MP Job Saathi is a mobile-first job discovery and eligibility assistant for Madh
 | Phase | Status | Notes |
 | --- | --- | --- |
 | Phase 1: Government core | ✅ Working slice implemented | Source model, extraction, eligibility engine, feed, API, tests |
-| Phase 2: Government apply assist | 🚧 Planned | Browser extension and MPOnline field-mapping workflow |
+| Phase 2: Government apply assist | ✅ Working assist slice implemented | Pre-fill map, document validation, pre-submit checklist |
 | Phase 3: Private jobs + job fairs | 🚧 Planned | ATS matching, scam scoring, job-fair registry |
 | Phase 4: Polish and growth | 🚧 Planned | Tracker, reminders, share cards, WhatsApp growth |
 
@@ -30,7 +30,7 @@ MP Job Saathi is a mobile-first job discovery and eligibility assistant for Madh
 ```bash
 cd backend
 python -m pip install -r requirements.txt
-python -m pytest tests/test_phase1.py -q
+python -m pytest tests -q
 python -m uvicorn app.main:app --host 0.0.0.0 --port 8000
 ```
 
@@ -38,13 +38,17 @@ Then open:
 
 - Health: http://localhost:8000/health
 - Notifications: http://localhost:8000/notifications
+- Prefill assist: POST /assist/prefill
+- Document validation: POST /assist/validate-document
+- Pre-submit checklist: POST /assist/pre-submit-checklist
 
 ## Verification
 
-The phase-1 proof command is:
+The current proof commands are:
 
 ```bash
 python -m pytest backend/tests/test_phase1.py -q
+python -m pytest backend/tests/test_phase2.py -q
 ```
 
-It currently passes with 6 tests in the repository.
+The project currently passes the phase-1 and phase-2 checks in this repository.

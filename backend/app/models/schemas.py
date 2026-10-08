@@ -86,3 +86,23 @@ class FeeBreakdown(BaseModel):
     fee: float
     portal_charges: float
     total: float
+
+
+class DocumentValidationResult(BaseModel):
+    is_valid: bool
+    issues: list[str] = Field(default_factory=list)
+
+
+class ChecklistItem(BaseModel):
+    title: str
+    status: str
+    message: str
+
+
+class FormPrefillPlan(BaseModel):
+    candidate_name: str
+    dob: str
+    category: str
+    gender: str
+    domicile: str
+    employment_exchange: str
