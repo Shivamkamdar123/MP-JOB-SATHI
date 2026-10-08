@@ -34,7 +34,9 @@ const applyPreFill = () => {
     const selector = selectors
       .map((name) => `input[name="${name}"]`)
       .concat(selectors.map((name) => `#${name}`))
-      .find((candidateSelector) => Boolean(document.querySelector(candidateSelector)));
+      .find((candidateSelector) =>
+        Boolean(document.querySelector(candidateSelector)),
+      );
 
     if (!selector) {
       return;

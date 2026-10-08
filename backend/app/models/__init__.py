@@ -6,6 +6,9 @@ from .schemas import (
     UserQualification,
     EligibilityResult,
     FeeBreakdown,
+    CompanySource,
+    PrivateJob,
+    JobFair,
 )
 
 __all__ = [
@@ -16,4 +19,7 @@ __all__ = [
     "UserQualification",
     "EligibilityResult",
     "FeeBreakdown",
+    "CompanySource",
+    "PrivateJob",
+    "JobFair",
 ]

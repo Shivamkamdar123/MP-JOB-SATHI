@@ -106,3 +106,44 @@ class FormPrefillPlan(BaseModel):
     gender: str
     domicile: str
     employment_exchange: str
+
+
+class CompanySource(BaseModel):
+    name: str
+    city: str
+    industry: str
+    careers_url: str
+    ats_type: Optional[str] = None
+    board_slug: Optional[str] = None
+    last_verified: Optional[str] = None
+
+
+class PrivateJob(BaseModel):
+    title: str
+    company: str
+    city: str
+    work_mode: str = "Onsite"
+    experience_min: int = 0
+    experience_max: Optional[int] = None
+    salary_inr_lpa: Optional[float] = None
+    employment_type: str = "Full-time"
+    ats_type: str = "unknown"
+    apply_url: str
+    posted_at: str
+    first_seen_at: str
+    last_seen_at: str
+    closed_at: Optional[str] = None
+    scam_score: float = 0.0
+    required_skills: list[str] = Field(default_factory=list)
+    location_scope: str = "MP"
+
+
+class JobFair(BaseModel):
+    title: str
+    district: str
+    venue: str
+    date_time: str
+    companies: list[str] = Field(default_factory=list)
+    eligibility: str
+    documents_to_carry: list[str] = Field(default_factory=list)
+    source_url: str

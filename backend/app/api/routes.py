@@ -3,6 +3,8 @@ from fastapi import APIRouter
 from app.assist.form_assist import build_pre_submit_checklist, generate_form_prefill, validate_document_spec
 from app.eligibility.engine import calculate_fee, evaluate_eligibility, get_for_you_feed
 from app.ingestion.mp_sources import get_sample_notifications
+from app.ingestion.private_jobs import get_company_registry, get_job_fair_calendar, get_private_job_fixtures
+from app.matching.matcher import match_private_jobs
 from app.models import GovtNotification, UserProfile
 
 router = APIRouter()
@@ -69,3 +71,21 @@ def assist_pre_submit_checklist(payload: dict) -> dict:
             docs_ready=bool(payload.get("docs_ready", False)),
         )
     }
+
+
+@router.get("/companies")
+def companies() -> dict:
+    return {"items": [company.model_dump(mode="json") for company in get_company_registry()]}
+
+
+@router.get("/job-fairs")
+def job_fairs() -> dict:
+    return {"items": [fair.model_dump(mode="json") for fair in get_job_fair_calendar()]}
+
+
+@router.post("/private-jobs/match")
+def private_jobs_match(payload: dict) -> dict:
+    profile = UserProfile.model_validate(payload["profile"])
+    jobs = [job for job in get_private_job_fixtures()]
+    matches = match_private_jobs(profile, jobs)
+    return {"items": [{"job": item["job"].model_dump(mode="json"), "score": item["score"], "reasons": item["reasons"], "status": item["status"]} for item in matches]}
