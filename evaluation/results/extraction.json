@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-10-10T05:08:51.407232+00:00",
+  "n": 0,
+  "target_statement": "N=0; this is the true current labeled-PDF sample size.",
+  "documents": [],
+  "unlabelled_pdfs": [],
+  "metrics": {
+    "org": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": null,
+      "recall": null,
+      "accuracy": null
+    },
+    "advertisement_no": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": null,
+      "recall": null,
+      "accuracy": null
+    },
+    "title": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": null,
+      "recall": null,
+      "accuracy": null
+    },
+    "total_vacancies": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": null,
+      "recall": null,
+      "accuracy": null
+    },
+    "opens_date": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": null,
+      "recall": null,
+      "accuracy": null
+    },
+    "last_date": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": null,
+      "recall": null,
+      "accuracy": null
+    },
+    "fee_by_category": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": null,
+      "recall": null,
+      "accuracy": null
+    },
+    "portal_charges": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": null,
+      "recall": null,
+      "accuracy": null
+    },
+    "exam_date": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": null,
+      "recall": null,
+      "accuracy": null
+    }
+  },
+  "failures": [],
+  "method_breakdown": {},
+  "limitations": "No accuracy claim is supported without hand-labeled official PDF fixtures."
+}

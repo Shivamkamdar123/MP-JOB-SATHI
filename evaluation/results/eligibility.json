@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-10-10T07:53:01.288952+00:00",
+  "n": 122,
+  "passed": 122,
+  "failed": 0,
+  "pass_rate": 1.0,
+  "status_passed": 122,
+  "status_pass_rate": 1.0,
+  "reason_passed": 122,
+  "reason_pass_rate": 1.0,
+  "actual_status_counts": {
+    "eligible": 61,
+    "likely": 4,
+    "needs_check": 21,
+    "not_eligible": 36
+  },
+  "failures": [],
+  "limitations": "This benchmark measures curated rule cases, not real recruitment-notice accuracy."
+}

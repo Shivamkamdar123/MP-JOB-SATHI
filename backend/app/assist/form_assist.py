@@ -52,12 +52,17 @@ def build_pre_submit_checklist(
 ) -> list[dict[str, str]]:
     fee = calculate_fee(notification, category)
     critical_review = evaluate_eligibility(notification, profile)
+    fee_message = (
+        f"Pay the fee before final submission: ₹{fee.total:.2f} ({category})."
+        if fee.total is not None
+        else fee.message or "Fee is not stated; verify the official notification before paying."
+    )
 
     items: list[dict[str, str]] = [
         {
             "title": "Fee payment",
             "status": "done" if paid else "pending",
-            "message": f"Pay the fee before final submission: ₹{fee.total:.2f} ({category}).",
+            "message": fee_message,
         },
         {
             "title": "Documents ready",

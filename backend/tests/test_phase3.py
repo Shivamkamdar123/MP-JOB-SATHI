@@ -1,5 +1,9 @@
 from fastapi.testclient import TestClient
+from sqlalchemy.orm import sessionmaker
 
+from app.db.database import create_database_engine, get_session
+from app.db.orm import Base
+from app.db.repositories import CatalogRepository
 from app.main import app
 from app.matching.matcher import match_private_jobs
 from app.ingestion.private_jobs import get_company_registry, get_private_job_fixtures
@@ -51,22 +55,41 @@ def test_scam_risk_is_flagged_for_untrusted_listing():
     assert any("Scam risk" in reason for reason in suspicious["reasons"])
 
 
-def test_private_job_match_endpoint_returns_ranked_results():
-    payload = {
-        "profile": {
-            "name": "Amit Verma",
-            "date_of_birth": "2001-08-12",
-            "gender": "male",
-            "category": "OBC",
-            "mp_domicile": True,
-            "experience_years": 1.5,
-            "preferred_districts": ["Pithampur", "Indore"],
-            "qualifications": [{"level": "Diploma", "stream": "Civil", "percentage": 82.5}],
-            "target_roles": ["Civil Engineer", "Junior Engineer"],
+def test_private_job_match_endpoint_returns_ranked_results(tmp_path):
+    test_engine = create_database_engine(f"sqlite:///{(tmp_path / 'private-jobs.db').as_posix()}")
+    Base.metadata.create_all(test_engine)
+    factory = sessionmaker(bind=test_engine, expire_on_commit=False)
+
+    def override_session():
+        with factory() as session:
+            yield session
+
+    app.dependency_overrides[get_session] = override_session
+    try:
+        with factory() as session:
+            catalog = CatalogRepository(session)
+            for job in get_private_job_fixtures():
+                catalog.add_private_job(job.model_copy(update={"is_fixture": True}))
+            session.commit()
+
+        payload = {
+            "profile": {
+                "name": "Amit Verma",
+                "date_of_birth": "2001-08-12",
+                "gender": "male",
+                "category": "OBC",
+                "mp_domicile": True,
+                "experience_years": 1.5,
+                "preferred_districts": ["Pithampur", "Indore"],
+                "qualifications": [{"level": "Diploma", "stream": "Civil", "percentage": 82.5}],
+                "target_roles": ["Civil Engineer", "Junior Engineer"],
+            }
         }
-    }
-    response = client.post("/private-jobs/match", json=payload)
-    assert response.status_code == 200
-    data = response.json()
-    assert "items" in data
-    assert data["items"][0]["score"] >= 50
+        response = client.post("/private-jobs/match", json=payload)
+        assert response.status_code == 200
+        data = response.json()
+        assert "items" in data
+        assert data["items"][0]["score"] >= 50
+    finally:
+        app.dependency_overrides.clear()
+        test_engine.dispose()

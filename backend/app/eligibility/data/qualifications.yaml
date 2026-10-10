@@ -1,0 +1,41 @@
+levels:
+  order:
+    - "10th"
+    - "12th"
+    - "ITI"
+    - "Diploma"
+    - "Graduate"
+    - "Postgraduate"
+    - "Doctorate"
+  aliases:
+    "10th": ["10th", "Matric", "Secondary", "SSC"]
+    "12th": ["12th", "HSC", "Higher Secondary", "Intermediate"]
+    "ITI": ["ITI", "Industrial Training Institute"]
+    "Diploma": ["Diploma", "Polytechnic"]
+    "Graduate":
+      [
+        "Graduate",
+        "B.Com",
+        "B.Com.",
+        "B.Sc",
+        "B.Sc.",
+        "B.A",
+        "B.A.",
+        "B.E",
+        "B.E.",
+        "B.Tech",
+        "B.Tech.",
+      ]
+    "Postgraduate":
+      [
+        "Postgraduate",
+        "M.A",
+        "M.A.",
+        "M.Sc",
+        "M.Sc.",
+        "M.Com",
+        "M.Com.",
+        "M.Tech",
+        "PG",
+      ]
+    "Doctorate": ["Doctorate", "PhD", "DPhil"]

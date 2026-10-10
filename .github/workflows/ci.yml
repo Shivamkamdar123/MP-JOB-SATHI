@@ -34,10 +34,12 @@ jobs:
           cd frontend
           npm ci
 
-      - name: Frontend type-check and build
+      - name: Frontend checks
         run: |
           cd frontend
           npx tsc --noEmit
+          npm run lint
+          npm test
           npm run build
 
       - name: Run evaluation script

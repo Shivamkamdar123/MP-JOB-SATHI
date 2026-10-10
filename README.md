@@ -6,39 +6,57 @@ MP Job Saathi is a mobile-first job-discovery and eligibility assistant for Madh
 
 | Phase | Status | Notes |
 | --- | --- | --- |
-| Phase 1: Government core | Partial: models, early eligibility engine, fixtures | Real data model and tests exist, but this is still a fixture-driven implementation rather than a live official-source pipeline |
-| Phase 2: Government apply assist | Scaffold only | Browser assist, validation, and pre-submit logic are not yet real or fully integrated |
-| Phase 3: Private jobs + job fairs | Scaffold only | Company registry and job data exist as fixtures, not verified live sourcing |
-| Phase 4: Polish and growth | Scaffold only | Reminder and growth flows are placeholders and not production-ready |
+| Phase 1: Government core | Partial, fixture-backed | Eligibility rules pass 122 agent-authored rule cases, not independently reviewed; official-source data and real notice accuracy are not established |
+| Phase 2: Government apply assist | Scaffold only | Existing API and checklist surfaces are incomplete and not production-ready |
+| Phase 3: Private jobs + job fairs | Scaffold only | Existing catalog data is fixture-only and not verified live sourcing |
+| Phase 4: Polish and growth | Scaffold only | Frontend and reminder surfaces are work-package implementation, not a completed product phase |
+
+WP1 is the active eligibility-engine rewrite gate. Its 122-case benchmark passes status and reason-code checks; later WP work remains frozen for review.
+
+## Eligibility diagnostics
+
+VS Code has reported six unresolved-import diagnostics in `backend/tests/test_persistence.py` (`pytest`, Alembic, FastAPI test client, and SQLAlchemy imports) when the selected analysis interpreter does not have the backend dependencies. The backend test run uses the configured Python 3.12 environment and passes; these editor diagnostics are an interpreter/environment mismatch, not six failing tests.
 
 ## Real vs stubbed
 
 | Area | Status |
 | --- | --- |
-| Government notification models | Real, but fixture-backed |
+| Government notification models | Real, persisted through SQLAlchemy; default data remains fixture-backed |
 | Eligibility engine | Real for the configured rules and tests |
-| Notification extraction parser | Real, but fixture-driven and not live fetched |
-| FastAPI API | Real |
-| Frontend shell | Present, but not connected to a verified production API |
+| Notification extraction parser | Present, but fixture-driven; no official PDFs downloaded |
+| FastAPI API | Real, typed request/response contracts backed by repositories |
+| Persistence | SQLAlchemy 2.0 + Alembic; SQLite locally and PostgreSQL in Docker |
+| Frontend shell | Present, but not connected to a verified production API; frozen until later WP approval |
 | MV3 extension | Present as scaffold only |
 | Live crawlers / official verification | Not yet implemented |
 | Private-job ATS and job-fair data | Fixture-only |
-| Phase 3 and 4 features | Not production-ready; scaffold or fixture only |
-
-## Docker / local setup note
-
-The repository currently includes a `docker-compose.yml` that starts PostgreSQL while the backend is configured for SQLite. This mismatch is acknowledged and documented here for now. It is not yet fixed in this Work Package.
+| Later workflow features | Not production-ready; scaffold or fixture only |
 
 ## Quick start
 
-### Backend
+### Docker
+
+```bash
+docker compose up --build
+```
+
+The backend waits for PostgreSQL, applies migrations, and then starts the API at `http://localhost:8000`. PostgreSQL data is stored in the `postgres_data` volume. Fixture data is not loaded automatically; load it explicitly with `docker compose exec backend python -m app.db.seed`.
+
+### Backend without Docker
+
+Use Python 3.12 for the pinned backend dependencies.
 
 ```bash
 cd backend
 python -m pip install -r requirements.txt
-python -m pytest tests -q
+alembic upgrade head
+python -m app.db.seed
 python -m uvicorn app.main:app --host 0.0.0.0 --port 8000
 ```
+
+Without `DATABASE_URL`, the backend uses `backend/mp_job_saathi.db` (SQLite). To use another database, set `DATABASE_URL` before running Alembic and the app. Set `CORS_ALLOWED_ORIGINS` to a comma-separated list of frontend origins; the default permits local Next.js development origins.
+
+The seed command is explicit and idempotent. Seeded records retain `is_fixture=true` and notifications use `source_kind="fixture"`.
 
 ### Frontend
 
@@ -50,16 +68,10 @@ npm run build
 
 ## Verification
 
-Current measured backend proof command:
+Backend proof command:
 
 ```bash
 python -m pytest backend/tests -q
 ```
 
-Current result from the repo at this revision:
-
-```text
-18 passed, 1 warning in 1.46s
-```
-
-This is a verified fixture-backed baseline, not a claim of full production deployment.
+The suite includes repository tests on in-memory SQLite, API tests on temporary SQLite databases, and an Alembic migration test against an empty database. The application remains fixture-backed unless real source records are added through curated workflows.

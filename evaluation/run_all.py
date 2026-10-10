@@ -14,6 +14,9 @@ def run_command(command: list[str]) -> subprocess.CompletedProcess[str]:
 
 
 def write_report(timestamp: str, commands: list[tuple[str, subprocess.CompletedProcess[str]]]) -> None:
+    existing_report = REPORT_PATH.read_text(encoding="utf-8") if REPORT_PATH.exists() else ""
+    extraction_marker = "## PDF Extraction Baseline"
+    extraction_section = existing_report[existing_report.index(extraction_marker):] if extraction_marker in existing_report else ""
     lines: list[str] = [
         "# MP Job Saathi Evaluation",
         "",
@@ -45,9 +48,12 @@ def write_report(timestamp: str, commands: list[tuple[str, subprocess.CompletedP
         "",
         "## Current status",
         "",
-        "- Phase 1: partial, fixture-backed, model + rules + engine verified by tests",
-        "- Phases 2-4: scaffold-only and not yet production-grade",
+        "- WP0: baseline repo and review gates are in place",
+        "- WP1: eligibility engine rewrite is measured against the checked-in rule-case corpus",
+        "- WP2-WP4: existing partial foundations remain frozen pending review",
     ])
+    if extraction_section:
+        lines.extend(["", extraction_section.rstrip()])
 
     REPORT_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -58,6 +64,10 @@ def main() -> int:
         (
             "Backend test suite",
             run_command([sys.executable, "-m", "pytest", "backend/tests", "-q"]),
+        ),
+        (
+            "Eligibility rule-case benchmark",
+            run_command([sys.executable, "evaluation/eligibility_benchmark.py"]),
         ),
     ]
     write_report(timestamp, commands)

@@ -1,0 +1,6291 @@
+[
+  {
+    "id": "age_1",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "1999-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "Age logic case 1."
+  },
+  {
+    "id": "age_2",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "1999-12-31",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "Age logic case 2."
+  },
+  {
+    "id": "age_3",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-02",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "Age logic case 3."
+  },
+  {
+    "id": "age_4",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2008-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "Age logic case 4: minimum age is inclusive at exactly 18."
+  },
+  {
+    "id": "age_5",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "1985-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "fail"
+      }
+    ],
+    "justification": "Age logic case 5."
+  },
+  {
+    "id": "age_6",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "1980-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2025-12-31"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "fail"
+      }
+    ],
+    "justification": "Age logic case 6: age 45 exceeds the maximum age of 40."
+  },
+  {
+    "id": "age_7",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-02-29",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-02-28"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "Age logic case 7."
+  },
+  {
+    "id": "age_8",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-02-29",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-03-01"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "Age logic case 8."
+  },
+  {
+    "id": "age_9",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2004-12-31",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "Age logic case 9."
+  },
+  {
+    "id": "age_10",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2005-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "Age logic case 10: age 21 is within the inclusive range 18 through 40."
+  },
+  {
+    "id": "age_11",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "1984-02-29",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-02-28"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "fail"
+      }
+    ],
+    "justification": "Age logic case 11."
+  },
+  {
+    "id": "age_12",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "1984-02-29",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2025-12-31"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "fail"
+      }
+    ],
+    "justification": "Age logic case 12: age 41 exceeds the maximum age of 40."
+  },
+  {
+    "id": "age_13",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2001-07-15",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "Age logic case 13."
+  },
+  {
+    "id": "age_14",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2001-08-12",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "Age logic case 14."
+  },
+  {
+    "id": "age_15",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2002-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "Age logic case 15."
+  },
+  {
+    "id": "age_16",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2002-01-02",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "Age logic case 16: age 23 is within the inclusive range 18 through 40."
+  },
+  {
+    "id": "age_17",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "1998-06-30",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "Age logic case 17."
+  },
+  {
+    "id": "age_18",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "1998-07-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "Age logic case 18: age 27 is within the inclusive range 18 through 40."
+  },
+  {
+    "id": "age_19",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-02-29",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-02-01"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "Age logic case 19: age 25 is within the inclusive range 18 through 40."
+  },
+  {
+    "id": "age_20",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-02-29",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-02-29"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "needs_check",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "unknown"
+      }
+    ],
+    "justification": "Age logic case 20: 2026-02-29 is not a valid reference date."
+  },
+  {
+    "id": "age_21",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-06-15",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-06-14"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "Age logic case 21: age 25 is within the inclusive range 18 through 40."
+  },
+  {
+    "id": "age_22",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-06-15",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-06-15"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "Age 26 is within the inclusive range 18 through 40."
+  },
+  {
+    "id": "age_23",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-06-15",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-06-16"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "Age logic case 23."
+  },
+  {
+    "id": "age_24",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-06-15",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-06-15"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "Age logic case 24."
+  },
+  {
+    "id": "ambiguous_1",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "needs_check",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "unknown"
+      }
+    ],
+    "justification": "Year-only as-on date 2026 must be treated as ambiguous."
+  },
+  {
+    "id": "ambiguous_2",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2025"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "needs_check",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "unknown"
+      }
+    ],
+    "justification": "Year-only as-on date 2025 must be treated as ambiguous."
+  },
+  {
+    "id": "ambiguous_3",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2024"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "needs_check",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "unknown"
+      }
+    ],
+    "justification": "Year-only as-on date 2024 must be treated as ambiguous."
+  },
+  {
+    "id": "ambiguous_4",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2023"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "needs_check",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "unknown"
+      }
+    ],
+    "justification": "Year-only as-on date 2023 must be treated as ambiguous."
+  },
+  {
+    "id": "ambiguous_5",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2022"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "needs_check",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "unknown"
+      }
+    ],
+    "justification": "Year-only as-on date 2022 must be treated as ambiguous."
+  },
+  {
+    "id": "ambiguous_6",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2027"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "needs_check",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "unknown"
+      }
+    ],
+    "justification": "Year-only as-on date 2027 must be treated as ambiguous."
+  },
+  {
+    "id": "ambiguous_7",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2028"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "needs_check",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "unknown"
+      }
+    ],
+    "justification": "Year-only as-on date 2028 must be treated as ambiguous."
+  },
+  {
+    "id": "ambiguous_8",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Junior Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2029"
+      },
+      "posts": [
+        {
+          "title": "Junior Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "needs_check",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "unknown"
+      }
+    ],
+    "justification": "Year-only as-on date 2029 must be treated as ambiguous."
+  },
+  {
+    "id": "qual_1",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "pass"
+      }
+    ],
+    "justification": "Qualification rule scenario 1."
+  },
+  {
+    "id": "qual_2",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 70
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "pass"
+      }
+    ],
+    "justification": "Qualification rule scenario 2."
+  },
+  {
+    "id": "qual_3",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 69
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "fail"
+      }
+    ],
+    "justification": "Qualification rule scenario 3."
+  },
+  {
+    "id": "qual_4",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Electrical",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "fail"
+      }
+    ],
+    "justification": "Qualification rule scenario 4."
+  },
+  {
+    "id": "qual_5",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "ITI",
+          "stream": "Civil",
+          "percentage": 75
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "fail"
+      }
+    ],
+    "justification": "ITI is below the required Diploma level."
+  },
+  {
+    "id": "qual_6",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "ITI",
+          "stream": "Mechanical",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "fail"
+      }
+    ],
+    "justification": "Qualification rule scenario 6."
+  },
+  {
+    "id": "qual_7",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "12th",
+          "stream": "Science",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "fail"
+      }
+    ],
+    "justification": "Qualification rule scenario 7."
+  },
+  {
+    "id": "qual_8",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Graduate",
+          "stream": "",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "fail"
+      }
+    ],
+    "justification": "Qualification rule scenario 8: the required Civil stream is missing."
+  },
+  {
+    "id": "qual_9",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "B.Com",
+          "stream": "",
+          "percentage": 72
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "fail"
+      }
+    ],
+    "justification": "B.Com maps to Graduate and does not satisfy the strict Diploma requirement."
+  },
+  {
+    "id": "qual_10",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "B.E.",
+          "stream": "Mechanical",
+          "percentage": 68
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "fail"
+      }
+    ],
+    "justification": "B.E. maps to Graduate and does not satisfy the strict Diploma requirement."
+  },
+  {
+    "id": "qual_11",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Doctorate",
+          "stream": "Engineering",
+          "percentage": 65
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "fail"
+      }
+    ],
+    "justification": "Qualification rule scenario 11: Doctorate does not satisfy a strict Diploma requirement."
+  },
+  {
+    "id": "qual_12",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "12th",
+          "stream": "",
+          "percentage": 96
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "fail"
+      }
+    ],
+    "justification": "Qualification rule scenario 12."
+  },
+  {
+    "id": "qual_13",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": null
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "needs_check",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "unknown"
+      }
+    ],
+    "justification": "Qualification rule scenario 13."
+  },
+  {
+    "id": "qual_14",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": null,
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "needs_check",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "unknown"
+      }
+    ],
+    "justification": "Qualification rule scenario 14."
+  },
+  {
+    "id": "qual_15",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Graduate",
+          "stream": "Civil",
+          "percentage": 85
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "fail"
+      }
+    ],
+    "justification": "Qualification rule scenario 15: higher levels require an explicit or_above rule."
+  },
+  {
+    "id": "qual_16",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Graduate",
+          "stream": "Civil",
+          "percentage": 66
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "fail"
+      }
+    ],
+    "justification": "Qualification rule scenario 16."
+  },
+  {
+    "id": "qual_17",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Graduate",
+          "stream": "Mechanical",
+          "percentage": 66
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "fail"
+      }
+    ],
+    "justification": "Qualification rule scenario 17."
+  },
+  {
+    "id": "qual_18",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Postgraduate",
+          "stream": "Mechanical",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "fail"
+      }
+    ],
+    "justification": "Qualification rule scenario 18: stream mismatch fails the strict requirement."
+  },
+  {
+    "id": "qual_19",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Graduate",
+          "stream": "",
+          "percentage": 60
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "fail"
+      }
+    ],
+    "justification": "A higher level does not satisfy the strict Diploma requirement."
+  },
+  {
+    "id": "qual_20",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Doctorate",
+          "stream": "Civil",
+          "percentage": 60
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "fail"
+      }
+    ],
+    "justification": "Qualification rule scenario 20: percentage is below the 70 percent minimum."
+  },
+  {
+    "id": "qual_21",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 60
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "fail"
+      }
+    ],
+    "justification": "Qualification rule scenario 21: percentage is below the 70 percent minimum."
+  },
+  {
+    "id": "qual_22",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 60
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "fail"
+      }
+    ],
+    "justification": "Qualification rule scenario 22: percentage is below the 70 percent minimum."
+  },
+  {
+    "id": "qual_23",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "ITI",
+          "stream": "Civil",
+          "percentage": 50
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "fail"
+      }
+    ],
+    "justification": "Qualification rule scenario 23: ITI is below the required Diploma level."
+  },
+  {
+    "id": "qual_24",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Graduate",
+          "stream": "Civil",
+          "percentage": 70
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"]
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "fail"
+      }
+    ],
+    "justification": "Qualification rule scenario 24: higher levels require an explicit or_above rule."
+  },
+  {
+    "id": "misc_1",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": false,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "fail"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 1."
+  },
+  {
+    "id": "misc_2",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 2."
+  },
+  {
+    "id": "misc_3",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "female",
+      "category": "OBC",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 3."
+  },
+  {
+    "id": "misc_4",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "OBC",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": true,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 4."
+  },
+  {
+    "id": "misc_5",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "SC",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": true
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 5."
+  },
+  {
+    "id": "misc_6",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "ST",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": false,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "employment_exchange",
+        "result": "fail"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 6."
+  },
+  {
+    "id": "misc_7",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "female",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": false,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "employment_exchange",
+        "result": "fail"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 7."
+  },
+  {
+    "id": "misc_8",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 8."
+  },
+  {
+    "id": "misc_9",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "OBC",
+      "mp_domicile": false,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "fail"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 9."
+  },
+  {
+    "id": "misc_10",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "female",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 10."
+  },
+  {
+    "id": "misc_11",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "SC",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 11."
+  },
+  {
+    "id": "misc_12",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "female",
+      "category": "ST",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 12."
+  },
+  {
+    "id": "misc_13",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 13."
+  },
+  {
+    "id": "misc_14",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "OBC",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 14."
+  },
+  {
+    "id": "misc_15",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 15."
+  },
+  {
+    "id": "misc_16",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 16."
+  },
+  {
+    "id": "misc_17",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 17."
+  },
+  {
+    "id": "misc_18",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 18."
+  },
+  {
+    "id": "misc_19",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 19."
+  },
+  {
+    "id": "misc_20",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "OBC",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 20."
+  },
+  {
+    "id": "misc_21",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "SC",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 21."
+  },
+  {
+    "id": "misc_22",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "ST",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 22."
+  },
+  {
+    "id": "misc_23",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 23."
+  },
+  {
+    "id": "misc_24",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "OBC",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 24."
+  },
+  {
+    "id": "misc_25",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "SC",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 25."
+  },
+  {
+    "id": "misc_26",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "ST",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 26."
+  },
+  {
+    "id": "misc_27",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "UR",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 27."
+  },
+  {
+    "id": "misc_28",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "female",
+      "category": "OBC",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 28."
+  },
+  {
+    "id": "misc_29",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "SC",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 29."
+  },
+  {
+    "id": "misc_30",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "category": "ST",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ],
+      "employment_exchange_registered": true,
+      "target_roles": ["Junior Engineer"],
+      "pwd": false,
+      "ex_serviceman": false
+    },
+    "notification": {
+      "title": "Engineer",
+      "status": "open",
+      "source_kind": "fixture",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Engineer",
+          "vacancies": 1,
+          "age_min": 18,
+          "age_max": 40,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ],
+          "domicile_required": true,
+          "employment_exchange_required": true
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "domicile",
+        "result": "pass"
+      }
+    ],
+    "justification": "Domicile and exchange coverage case 30."
+  },
+  {
+    "id": "manual_missing_as_on",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "needs_check",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "unknown"
+      }
+    ],
+    "justification": "A missing age reference date cannot support an age decision."
+  },
+  {
+    "id": "manual_missing_age_max",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "needs_check",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "unknown"
+      }
+    ],
+    "justification": "An incomplete age range requires manual confirmation."
+  },
+  {
+    "id": "manual_missing_qualification_rule",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male"
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post"
+        }
+      ]
+    },
+    "expected_status": "needs_check",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "unknown"
+      }
+    ],
+    "justification": "An absent qualification rule must not be treated as a pass."
+  },
+  {
+    "id": "manual_obc_female_age_relaxation_applies",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "1990-01-01",
+      "gender": "female",
+      "category": "OBC",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 30,
+        "as_on_date": "2026-01-01"
+      },
+      "age_relaxation_combination": "max_only",
+      "age_relaxation_rules": [
+        {
+          "category": "OBC",
+          "years": 5,
+          "applies_to": {
+            "gender": "female",
+            "domicile": true
+          }
+        }
+      ],
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "fail"
+      }
+    ],
+    "justification": "Age 36 exceeds the relaxed upper bound of 35."
+  },
+  {
+    "id": "manual_obc_female_age_relaxation_within_limit",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "1991-01-01",
+      "gender": "female",
+      "category": "OBC",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 30,
+        "as_on_date": "2026-01-01"
+      },
+      "age_relaxation_combination": "max_only",
+      "age_relaxation_rules": [
+        {
+          "category": "OBC",
+          "years": 5,
+          "applies_to": {
+            "gender": "female",
+            "domicile": true
+          }
+        }
+      ],
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "Age 35 is at the inclusive relaxed upper bound."
+  },
+  {
+    "id": "manual_relaxation_does_not_apply_to_male",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "1991-01-01",
+      "gender": "male",
+      "category": "OBC",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 30,
+        "as_on_date": "2026-01-01"
+      },
+      "age_relaxation_combination": "max_only",
+      "age_relaxation_rules": [
+        {
+          "category": "OBC",
+          "years": 5,
+          "applies_to": {
+            "gender": "female",
+            "domicile": true
+          }
+        }
+      ],
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "fail"
+      }
+    ],
+    "justification": "A gender-scoped relaxation does not apply to a male candidate."
+  },
+  {
+    "id": "manual_unknown_relaxation_years",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "1991-01-01",
+      "gender": "female",
+      "category": "OBC",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 30,
+        "as_on_date": "2026-01-01"
+      },
+      "age_relaxation_combination": "max_only",
+      "age_relaxation_rules": [
+        {
+          "category": "OBC",
+          "applies_to": {
+            "gender": "female"
+          }
+        }
+      ],
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "needs_check",
+    "expected_reason_codes": [
+      {
+        "check": "age_relaxation",
+        "result": "unknown"
+      }
+    ],
+    "justification": "An applicable relaxation with no stated years cannot be applied."
+  },
+  {
+    "id": "manual_be_graduate_alias_or_above",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "qualifications": [
+        {
+          "level": "B.E.",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "or_above": true
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "pass"
+      }
+    ],
+    "justification": "B.E. normalizes to Graduate and satisfies an explicit Diploma-or-above rule."
+  },
+  {
+    "id": "manual_unknown_qualification_level",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "qualifications": [
+        {
+          "level": "Unlisted Certificate",
+          "stream": "Civil",
+          "percentage": 90
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "needs_check",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "unknown"
+      }
+    ],
+    "justification": "An unrecognized level requires review rather than an inferred hierarchy rank."
+  },
+  {
+    "id": "manual_percentage_exact_threshold",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 70
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "pass"
+      }
+    ],
+    "justification": "The stated minimum percentage is inclusive."
+  },
+  {
+    "id": "manual_percentage_below_threshold",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 69.99
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "fail"
+      }
+    ],
+    "justification": "A percentage below the stated minimum fails the qualification rule."
+  },
+  {
+    "id": "manual_percentage_missing",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil"
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "needs_check",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "unknown"
+      }
+    ],
+    "justification": "A missing percentage must not be interpreted as meeting the minimum."
+  },
+  {
+    "id": "manual_profile_has_no_qualifications",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "qualifications": []
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil"
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "needs_check",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "unknown"
+      }
+    ],
+    "justification": "No candidate qualification data requires review."
+  },
+  {
+    "id": "manual_second_post_matches",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Electrical",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Electrical"
+            }
+          ]
+        },
+        {
+          "title": "Civil",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil"
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "pass"
+      }
+    ],
+    "justification": "Eligibility is evaluated across all posts; a later matching post must be found."
+  },
+  {
+    "id": "manual_gender_restriction",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "gender_restrictions": "female",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil"
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "gender",
+        "result": "fail"
+      }
+    ],
+    "justification": "A post restricted to female candidates excludes a male profile."
+  },
+  {
+    "id": "manual_likely_one_alternative_matches",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil"
+            },
+            {
+              "level": "Diploma",
+              "stream": "Electrical"
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "pass"
+      }
+    ],
+    "justification": "Qualification alternatives are any-of: the Civil alternative passes, so the post is eligible."
+  },
+  {
+    "id": "manual_stack_age_relaxations",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "1991-01-01",
+      "gender": "female",
+      "category": "OBC",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 30,
+        "as_on_date": "2026-01-01"
+      },
+      "age_relaxation_combination": "stack",
+      "age_relaxation_rules": [
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "OBC",
+          "years": 2
+        }
+      ],
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "Two applicable relaxations stack to an upper age of 35, inclusive for this candidate."
+  },
+  {
+    "id": "manual_unknown_relaxation_combination",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "1991-01-01",
+      "gender": "female",
+      "category": "OBC",
+      "mp_domicile": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 30,
+        "as_on_date": "2026-01-01"
+      },
+      "age_relaxation_combination": "unknown",
+      "age_relaxation_rules": [
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "OBC",
+          "years": 2
+        }
+      ],
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "needs_check",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "unknown"
+      }
+    ],
+    "justification": "Two applicable relaxations with no stated combination rule require manual review."
+  },
+  {
+    "id": "manual_likely_low_confidence_title_1",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Civil Engineer",
+          "field_provenance": {
+            "title": {
+              "confidence": 0.65,
+              "snippet": "Civil Engineer",
+              "method": "llm"
+            }
+          },
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "min_percent": 70
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "likely",
+    "expected_reason_codes": [
+      {
+        "check": "role_relevance",
+        "result": "unknown"
+      }
+    ],
+    "justification": "All hard criteria pass; low-confidence title evidence leaves only soft role relevance unresolved."
+  },
+  {
+    "id": "manual_likely_low_confidence_title_2",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "1998-05-10",
+      "gender": "female",
+      "qualifications": [
+        {
+          "level": "Graduate",
+          "stream": "Nursing",
+          "percentage": 75
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Nursing Officer",
+          "field_provenance": {
+            "title": {
+              "confidence": 0.4,
+              "snippet": "Nursing Officer",
+              "method": "ocr"
+            }
+          },
+          "qualification_rules": [
+            {
+              "level": "Graduate",
+              "stream": "Nursing",
+              "min_percent": 70
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "likely",
+    "expected_reason_codes": [
+      {
+        "check": "role_relevance",
+        "result": "unknown"
+      }
+    ],
+    "justification": "Age and qualification pass; low-confidence OCR title leaves a soft relevance check unresolved."
+  },
+  {
+    "id": "manual_likely_low_confidence_title_3",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "1995-03-02",
+      "gender": "male",
+      "qualifications": [
+        {
+          "level": "ITI",
+          "stream": "Electrician",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Electrician",
+          "field_provenance": {
+            "title": {
+              "confidence": 0.55,
+              "snippet": "Electrician",
+              "method": "table"
+            }
+          },
+          "qualification_rules": [
+            {
+              "level": "ITI",
+              "stream": "Electrician",
+              "min_percent": 70
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "likely",
+    "expected_reason_codes": [
+      {
+        "check": "role_relevance",
+        "result": "unknown"
+      }
+    ],
+    "justification": "All hard criteria pass; the low-confidence table title keeps the soft role-relevance check uncertain."
+  },
+  {
+    "id": "manual_likely_low_confidence_title_4",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "1999-11-30",
+      "gender": "female",
+      "qualifications": [
+        {
+          "level": "12th",
+          "stream": "Science",
+          "percentage": 82
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Lab Assistant",
+          "field_provenance": {
+            "title": {
+              "confidence": 0.69,
+              "snippet": "Lab Assistant",
+              "method": "regex"
+            }
+          },
+          "qualification_rules": [
+            {
+              "level": "12th",
+              "stream": "Science",
+              "min_percent": 75
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "likely",
+    "expected_reason_codes": [
+      {
+        "check": "role_relevance",
+        "result": "unknown"
+      }
+    ],
+    "justification": "Age and qualification pass; title confidence below the soft-check threshold leaves role relevance uncertain."
+  },
+  {
+    "id": "manual_non_ur_over_base_age_no_relaxation_data",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "1988-01-01",
+      "gender": "female",
+      "category": "OBC",
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 30,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil"
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "needs_check",
+    "expected_reason_codes": [
+      {
+        "check": "age_relaxation",
+        "result": "unknown"
+      }
+    ],
+    "justification": "Age 38 exceeds the base cap, but no non-UR relaxation data was parsed."
+  },
+  {
+    "id": "manual_non_ur_within_base_age_no_relaxation_data",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "1998-01-01",
+      "gender": "female",
+      "category": "OBC",
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 30,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil"
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "Age 28 passes the base cap, so no unparsed relaxation is needed."
+  },
+  {
+    "id": "manual_missing_required_certificate",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "required_certificate": "Valid Class-I Electrical License"
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "needs_check",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "unknown"
+      }
+    ],
+    "justification": "The profile does not record certificates, so the required license is unknown rather than assumed present or absent."
+  },
+  {
+    "id": "manual_required_certificate_absent",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "certificates": [],
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil",
+              "required_certificate": "Valid Class-I Electrical License"
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "fail"
+      }
+    ],
+    "justification": "The profile explicitly lists no certificates, so the mandatory license is absent."
+  },
+  {
+    "id": "manual_gender_restriction_pass",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "female",
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "gender_restrictions": "female",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil"
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "gender",
+        "result": "pass"
+      }
+    ],
+    "justification": "The profile gender satisfies the post's female-only restriction."
+  },
+  {
+    "id": "manual_pwd_constraint_pass",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "pwd": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "pwd_required": true,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil"
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "pwd",
+        "result": "pass"
+      }
+    ],
+    "justification": "The candidate meets the post's PwD-reserved constraint."
+  },
+  {
+    "id": "manual_pwd_constraint_fail",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "pwd": false,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "pwd_required": true,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil"
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "pwd",
+        "result": "fail"
+      }
+    ],
+    "justification": "The candidate does not meet the post's PwD-reserved constraint."
+  },
+  {
+    "id": "manual_ex_serviceman_constraint_pass",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "ex_serviceman": true,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "ex_serviceman_required": true,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil"
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "ex_serviceman",
+        "result": "pass"
+      }
+    ],
+    "justification": "The candidate meets the post's ex-serviceman constraint."
+  },
+  {
+    "id": "manual_ex_serviceman_constraint_fail",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "ex_serviceman": false,
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "ex_serviceman_required": true,
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil"
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "ex_serviceman",
+        "result": "fail"
+      }
+    ],
+    "justification": "The candidate does not meet the post's ex-serviceman constraint."
+  },
+  {
+    "id": "manual_age_cutoff_day",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2008-01-01",
+      "gender": "male",
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil"
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "DOB equals the cutoff anniversary: age is exactly 18 and the minimum is inclusive."
+  },
+  {
+    "id": "manual_age_dob_day_before_cutoff",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2007-12-31",
+      "gender": "male",
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil"
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "DOB is one day before the cutoff anniversary: age is 18."
+  },
+  {
+    "id": "manual_age_dob_day_after_cutoff",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2008-01-02",
+      "gender": "male",
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil"
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "not_eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "fail"
+      }
+    ],
+    "justification": "DOB is one day after the cutoff anniversary: age is 17, below the minimum."
+  },
+  {
+    "id": "manual_leap_day_dob",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-02-29",
+      "gender": "male",
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Notice",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-03-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil"
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "age",
+        "result": "pass"
+      }
+    ],
+    "justification": "By 2026-03-01 the leap-day DOB has passed its birthday; age is 26."
+  },
+  {
+    "id": "manual_closed_notification",
+    "profile": {
+      "name": "Candidate",
+      "date_of_birth": "2000-01-01",
+      "gender": "male",
+      "qualifications": [
+        {
+          "level": "Diploma",
+          "stream": "Civil",
+          "percentage": 80
+        }
+      ]
+    },
+    "notification": {
+      "title": "Closed notice",
+      "status": "closed",
+      "last_date": "2026-01-01",
+      "age_limit": {
+        "min": 18,
+        "max": 40,
+        "as_on_date": "2026-01-01"
+      },
+      "posts": [
+        {
+          "title": "Post",
+          "qualification_rules": [
+            {
+              "level": "Diploma",
+              "stream": "Civil"
+            }
+          ]
+        }
+      ]
+    },
+    "expected_status": "eligible",
+    "expected_reason_codes": [
+      {
+        "check": "qualification",
+        "result": "pass"
+      }
+    ],
+    "justification": "Eligibility rules still pass, but closed notices must be excluded from the feed."
+  }
+]

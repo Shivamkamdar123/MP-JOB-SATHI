@@ -1,0 +1,13 @@
+# Hindi Translation Review
+
+All Hindi dictionary values in `frontend/lib/i18n.tsx` are machine-translated and need fluent Hindi review before a public launch. Review especially consent/privacy language, recruitment category names, disability and ex-serviceman terminology, eligibility labels, fee/deadline warnings, PWA/offline messages, and measured-results terminology.
+
+Machine-translated dictionary keys:
+
+- Brand and navigation: `brand`, `tagline`, `feed`, `stats`, `service`, `language`, `languageHindi`, `languageEnglish`, `back`, `start`.
+- Consent and profile form: `profile`, `consentTitle`, `consentBody`, `consentCheck`, `consent`, `continue`, `saveProfile`, `name`, `dob`, `gender`, `category`, `domicile`, `pwd`, `exServiceman`, `qualification`, `stream`, `percentage`, `experience`, `districts`, `exchange`, `roles`, `addQualification`, `yes`, `no`, `male`, `female`, `other`, `select`, `invalidDate`, `invalidProfile`, `profileStored`, `consentRequired`.
+- Feed, eligibility, verification, and offline states: `eligible`, `likely`, `needs_check`, `not_eligible`, `daysLeft`, `closingSoon`, `viewDetails`, `saveJob`, `saved`, `verification_verified`, `verification_auto`, `verification_fixture`, `loading`, `loadError`, `retry`, `emptyFeed`, `noProfile`, `networkOffline`, `unknown`, `serviceOffline`, `loadSaved`.
+- Job detail and checklist: `fee`, `feeTotal`, `unknownFee`, `dates`, `opens`, `deadline`, `feeDeadline`, `examDate`, `vacancies`, `officialSource`, `pdf`, `discrepancy`, `disclaimer`, `eligibility`, `checklist`, `checklistDone`, `checklistPending`, `checklistWarning`, `check_age`, `check_age_relaxation`, `check_qualification`, `check_domicile`, `check_employment_exchange`, `check_gender`, `check_pwd`, `check_ex_serviceman`, `check_verification`, `check_notification`, `check_fee`, `check_date`, `documents`, `eligibilityReview`, `feeGuide`, `documentsGuide`, `eligibilityGuide`, `deadlineGuide`, `sourceNotProvided`.
+- Measured results: `statsTitle`, `sampleCount`, `generated`, `failures`, `precision`, `recall`, `accuracy`, `expected`, `actual`, `notMeasured`, `noFailures`, `stat_org`, `stat_advertisement_no`, `stat_title`, `stat_total_vacancies`, `stat_opens_date`, `stat_last_date`, `stat_fee_by_category`, `stat_portal_charges`, `stat_exam_date`.
+
+Dynamic reason messages and discrepancy text returned by the backend are displayed unchanged (usually English), not machine-translated. Keep official-source wording intact unless a reviewed translation is available. Candidate names, post titles, dates, URLs, and measured numeric values are data rather than UI copy.
