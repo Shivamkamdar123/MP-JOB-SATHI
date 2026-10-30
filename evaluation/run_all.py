@@ -60,6 +60,7 @@ def write_report(timestamp: str, commands: list[tuple[str, subprocess.CompletedP
 
 def main() -> int:
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S %Z")
+    extraction_proc = run_command([sys.executable, "evaluation/extraction_benchmark.py"])
     commands = [
         (
             "Backend test suite",
@@ -68,6 +69,10 @@ def main() -> int:
         (
             "Eligibility rule-case benchmark",
             run_command([sys.executable, "evaluation/eligibility_benchmark.py"]),
+        ),
+        (
+            "PDF extraction benchmark",
+            extraction_proc,
         ),
     ]
     write_report(timestamp, commands)

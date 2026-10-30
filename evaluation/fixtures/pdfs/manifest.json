@@ -1,5 +1,30 @@
 {
-  "collection_status": "pending_manual_download",
-  "reason": "No automated crawling was performed. Official PDFs will be downloaded manually and labeled by the user.",
-  "fixtures": []
+  "collection_status": "manual_download",
+  "reason": "No automated crawling was performed. Official PDFs were downloaded manually from official MPPSC portal and labeled by hand.",
+  "fixtures": [
+    {
+      "id": "advt_ad_farmers_welfare_2026",
+      "pdf_filename": "Advt_AD_Farmers_Welfare_and_Agriculture_Development_Statistics_2026_Dated_10_04_2026.pdf",
+      "sha256": "983844afc7e6e369fa15aa7824571472cd486c3437ed2d57dd0ac5009b4e3ebb",
+      "source_org": "MPPSC",
+      "advertisement_no": "09/2026",
+      "expected_json": "expected.json"
+    },
+    {
+      "id": "advt_assistant_director_2026",
+      "pdf_filename": "Advt_Assistant_Director_2026_Dated_06_07_2026.pdf",
+      "sha256": "7ab4a15ea7558750e4354d0c0e5d2ef93cf99aeefd4ef166cbf7fd5a17cf17aa",
+      "source_org": "MPPSC",
+      "advertisement_no": "12/2026",
+      "expected_json": "expected.json"
+    },
+    {
+      "id": "advt_law_officer_2026",
+      "pdf_filename": "Advt_Law_Officer_Exam_2026_Dated_08_10_2026.pdf",
+      "sha256": "ff6c06c4da6b339889419371acec40a208c5a46cd75d0f6035dc5d5c7ae7651e",
+      "source_org": "MPPSC",
+      "advertisement_no": "13/2026",
+      "expected_json": "expected.json"
+    }
+  ]
 }

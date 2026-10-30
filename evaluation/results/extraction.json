@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T07:49:23.425083+00:00",
+  "generated_at": "2026-10-30T04:54:49.052996+00:00",
   "n": 3,
   "target_statement": "N=3; this is the current labeled-PDF sample size.",
   "documents": [
@@ -19,17 +19,7 @@
       "label": "evaluation\\fixtures\\pdfs\\advt_law_officer_2026\\expected.json"
     }
   ],
-  "unlabelled_pdfs": [
-    "evaluation\\fixtures\\pdfs\\ADDET_2026_Rulebook_04062026.pdf",
-    "evaluation\\fixtures\\pdfs\\Group2_SG1_2026_RevisedRulebook_Page16_27072026.pdf",
-    "evaluation\\fixtures\\pdfs\\GRoup3_2026_EXAM_DATE_PageNo_01_90TO93_110_updated_09102026.pdf",
-    "evaluation\\fixtures\\pdfs\\MSPSTET_2026_RuleBookforTeachers_17082026.pdf",
-    "evaluation\\fixtures\\pdfs\\PAT_2026_RULEBOOK_18032026.pdf",
-    "evaluation\\fixtures\\pdfs\\PCRT_2026_Rulebook_Revised_Page_01_15092026.pdf",
-    "evaluation\\fixtures\\pdfs\\PCRT_Driver_2026_rulebook_07102026.pdf",
-    "evaluation\\fixtures\\pdfs\\PNST_2026_RULEBOOK_09062026.pdf",
-    "evaluation\\fixtures\\pdfs\\Steno_ASI_2026_Rulebook_17092026.pdf"
-  ],
+  "unlabelled_pdfs": [],
   "metrics": {
     "org": {
       "tp": 0,

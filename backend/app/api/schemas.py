@@ -78,10 +78,6 @@ class FeeRequest(BaseModel):
     category: str = "UR"
 
 
-class PrefillRequest(BaseModel):
-    profile: UserProfile
-
-
 class DocumentValidationRequest(BaseModel):
     file_name: str = "photo.jpg"
     file_size_bytes: int = Field(default=150000, ge=0)
