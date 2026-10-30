@@ -91,7 +91,7 @@ def run_benchmark() -> dict[str, Any]:
         if not expected_path.exists():
             unlabelled.append(str(pdf_path.relative_to(ROOT)))
             continue
-        expected = json.loads(expected_path.read_text(encoding="utf-8"))
+        expected = json.loads(expected_path.read_text(encoding="utf-8-sig"))
         parsed_pdf = extract_pdf(pdf_path)
         actual = extract_structured(
             parsed_pdf.pages,
