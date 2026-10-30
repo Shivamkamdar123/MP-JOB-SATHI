@@ -62,6 +62,7 @@ class FeedItem(BaseModel):
     notification: str | None = None
     org: str | None = None
     status: str
+    effective_status: str | None = None
     matched_post: str | None = None
     matched_posts: list[str] = Field(default_factory=list)
     last_date: str | None = None

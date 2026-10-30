@@ -333,6 +333,24 @@ def calculate_fee(notification: GovtNotification, category: str) -> FeeBreakdown
     )
 
 
+def compute_effective_status(notification: GovtNotification, today: "str | date | None" = None) -> str:
+    """Return a display-safe status for a notification.
+
+    * "closed"       - notification.status is "closed" OR last_date is past
+    * "closing_soon" - last_date is within the next 7 days (inclusive)
+    * "open"         - everything else (including no last_date)
+    """
+    if notification.status == "closed":
+        return "closed"
+    effective_today = today if today is not None else date.today()
+    remaining = days_left(notification, effective_today)
+    if remaining is not None and remaining < 0:
+        return "closed"
+    if remaining is not None and remaining <= 7:
+        return "closing_soon"
+    return "open"
+
+
 def get_for_you_feed(
     profile: UserProfile,
     notifications: list[GovtNotification],
@@ -343,8 +361,13 @@ def get_for_you_feed(
     for notification in notifications:
         if notification.status == "closed":
             continue
+        effective_today = today if today is not None else date.today()
+        remaining = days_left(notification, effective_today)
+        # D10 fix: skip notices whose deadline has already passed
+        if remaining is not None and remaining < 0:
+            continue
         result = evaluate_eligibility(notification, profile)
-        remaining = days_left(notification, today if today is not None else date.today())
+        eff_status = compute_effective_status(notification, effective_today)
         ranked.append({
             "id": (notification_ids or {}).get(id(notification)),
             "notification": notification.title,
@@ -363,6 +386,7 @@ def get_for_you_feed(
                 else "verified" if notification.verified_by == "curator"
                 else "auto"
             ),
+            "effective_status": eff_status,
         })
 
     ranked.sort(
@@ -378,7 +402,8 @@ def get_for_you_feed(
 __all__ = [
     "evaluate_eligibility",
     "calculate_fee",
-    "get_for_you_feed",
+    "get_for_you_feed",
+    "compute_effective_status",
     "days_left",
     "is_closing_soon",
     "parse_date",

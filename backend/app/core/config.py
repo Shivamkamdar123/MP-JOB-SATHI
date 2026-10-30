@@ -7,6 +7,7 @@ APP_ENV = os.getenv("APP_ENV", "development")
 APP_NAME = os.getenv("APP_NAME", "MP Job Saathi")
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./mp_job_saathi.db")
 SECRET_KEY = os.getenv("SECRET_KEY", "change-me")
+SHOW_FIXTURES = os.getenv("SHOW_FIXTURES", "true" if APP_ENV != "production" else "false").lower() in ("true", "1", "yes")
 CORS_ALLOWED_ORIGINS = tuple(
     origin.strip()
     for origin in os.getenv("CORS_ALLOWED_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000").split(",")
@@ -23,6 +24,7 @@ __all__ = [
     "APP_NAME",
     "DATABASE_URL",
     "SECRET_KEY",
+    "SHOW_FIXTURES",
     "CORS_ALLOWED_ORIGINS",
     "TELEGRAM_BOT_TOKEN",
     "TELEGRAM_CHAT_ID",

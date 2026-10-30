@@ -154,16 +154,20 @@ class NotificationRepository:
             .where(NotificationRecord.id == notification_id)
         )
 
-    def list(self, include_closed: bool = True) -> list[GovtNotification]:
+    def list(self, include_closed: bool = True, include_fixtures: bool = True) -> list[GovtNotification]:
         query = select(NotificationRecord).options(selectinload(NotificationRecord.posts)).order_by(NotificationRecord.id)
         if not include_closed:
             query = query.where(or_(NotificationRecord.status != "closed", NotificationRecord.status.is_(None)))
+        if not include_fixtures:
+            query = query.where(NotificationRecord.source_kind != "fixture")
         return [_notification_data(item) for item in self.session.scalars(query).unique()]
 
-    def list_with_ids(self, include_closed: bool = True) -> list[tuple[int, GovtNotification]]:
+    def list_with_ids(self, include_closed: bool = True, include_fixtures: bool = True) -> list[tuple[int, GovtNotification]]:
         query = select(NotificationRecord).options(selectinload(NotificationRecord.posts)).order_by(NotificationRecord.id)
         if not include_closed:
             query = query.where(or_(NotificationRecord.status != "closed", NotificationRecord.status.is_(None)))
+        if not include_fixtures:
+            query = query.where(NotificationRecord.source_kind != "fixture")
         return [(record.id, _notification_data(record)) for record in self.session.scalars(query).unique()]
 
     def verify(self, notification_id: int, actor: str, source_url: str | None = None) -> GovtNotification | None:
@@ -174,6 +178,7 @@ class NotificationRepository:
         notification.verified_at = datetime.now(timezone.utc).isoformat()
         notification.verified_by = "curator"
         notification.source_kind = "official"
+        notification.review_required = False
         if source_url and source_url not in notification.source_urls:
             notification.source_urls.append(source_url)
         record.source_kind = "official"
@@ -188,7 +193,13 @@ class NotificationRepository:
         if record is None:
             return None
         current = _notification_data(record)
-        updated = GovtNotification.model_validate({**_dump(current), **changes})
+        merged = {**_dump(current), **changes}
+        if current.verified_by == "curator":
+            merged["verified_by"] = "curator"
+            merged["verified_at"] = datetime.now(timezone.utc).isoformat()
+            if "review_required" not in changes:
+                merged["review_required"] = False
+        updated = GovtNotification.model_validate(merged)
         record.title = updated.title
         record.status = updated.status
         record.source_kind = updated.source_kind
